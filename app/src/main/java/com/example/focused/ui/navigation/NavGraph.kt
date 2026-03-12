@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.focused.ui.screens.AnalyticsScreen
+import com.example.focused.ui.screens.AppSelectionScreen
 import com.example.focused.ui.screens.SplashScreen
 import com.example.focused.ui.screens.DashboardScreen
 
@@ -46,9 +47,7 @@ fun SetupNavGraph(navController: NavHostController) {
 
         // App Selection Route (We will build this next)
         composable(route = Screen.AppSelection.route) {
-            Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                Text("App Selection Screen", color = Color.White)
-            }
+            AppSelectionScreen()
         }
     }
 }
